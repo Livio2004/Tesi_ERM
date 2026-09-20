@@ -21,7 +21,7 @@ def genera_matrice_S(N, b0):
 #print(X[np.newaxis, :]-X[:, np.newaxis])
 
 
-N = [300,1000,10000]
+N = [300,1000,1000]
 b0 = 1 
 
 S = [genera_matrice_S(N[i], b0) for i in range(len(N))]
@@ -32,8 +32,11 @@ autovalori, autovettori,history = auto.eigensolver_QR_numpy(1000)
 autovalori1, autovettori1 = eigh(S[0])
 autovalori2, autovettori2 = eigh(S[1])
 autovalori3, autovettori3 = eigh(S[2])
-
-
+'''
+autovalori1 = autovalori1/N[0]
+autovalori2 = autovalori2/N[1]
+autovalori3 = autovalori3/N[2]
+'''
 plt.figure(figsize = (10,6))
 conteggi, bordi_bin = np.histogram(np.real(autovalori1), density = True,  bins='sturges', range=(np.min((np.real(autovalori1))),np.max((np.real(autovalori1)))))
 centri_bin = (bordi_bin[:-1] + bordi_bin[1:]) / 2
