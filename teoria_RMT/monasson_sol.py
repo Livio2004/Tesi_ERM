@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns 
 from scipy.optimize import root
 from scipy.optimize import brentq
+plt.rcParams.update({'font.size': 18})
+
 
 def resolvent_system(x, z, alpha, gamma_k):
     gi, gr = x

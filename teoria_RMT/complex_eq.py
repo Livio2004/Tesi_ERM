@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns 
 from scipy.stats import norm
 from scipy.optimize import brentq
+plt.rcParams.update({'font.size': 18})
+
 
 
 

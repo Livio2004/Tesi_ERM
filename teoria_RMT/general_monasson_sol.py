@@ -2,6 +2,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy.optimize import root, brentq
+plt.rcParams.update({
+    'font.size': 13,
+    'axes.titlesize': 16,
+    'axes.labelsize': 15,
+    'xtick.labelsize': 12,
+    'ytick.labelsize': 12,
+    'legend.fontsize': 11,
+    'mathtext.fontset': 'stix',
+})
+
 
 def resolvent_system(x,z,alpha,gamma_k):
     gi,gr=x
@@ -184,7 +194,7 @@ for index in range(len(alpha)):
 
     axs[index].hist(
         eigvals,
-        bins=10000,
+        bins=1000,
         density=True,
         alpha=0.5,
         label=fr"ERM SIMULATION ($N={N_values[index]}$, 50 toys)"+"\n"+
@@ -197,6 +207,7 @@ for index in range(len(alpha)):
     axs[index].set_ylabel("Density")
     axs[index].set_title(fr"$\alpha={alpha[index]:.2f}$, $N={N_values[index]}$, $L={L_values[index]}$")
     axs[index].legend()
-
+    
 plt.tight_layout()
+plt.savefig('complete_simulation.png')
 plt.show()
