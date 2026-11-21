@@ -32,7 +32,7 @@ $$
 z=B(G)=\frac{1}{G}+\sum_{m\ne 0}\frac{\alpha\gamma_m}{\alpha-\gamma_m G}.
 $$
 
-This equation gives two ways to compare theory with simulations. On the physical branch, the imaginary part gives the density through $\rho(\lambda)=\operatorname{Im}G(\lambda-i0)/\pi$. At a regular band edge the real inverse function has a turning point. I locate these points numerically by solving $B'(g)=0$ between poles and mapping the relevant roots back to eigenvalues through $\lambda=B(g)$.
+This equation gives two ways to compare theory with simulations. On the physical branch, the imaginary part gives the density through $\rho(\lambda)=ImG(\lambda-i0)/\pi$. At a regular band edge the real inverse function has a turning point. I locate these points numerically by solving $B'(g)=0$ between poles and mapping the relevant roots back to eigenvalues through $\lambda=B(g)$.
 
 ![Real inverse resolvent for four loads, with marked stationary points and horizontal guides at their spectral values](teoria_RMT/zeri.png)
 
