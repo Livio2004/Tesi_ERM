@@ -14,7 +14,7 @@ What happens to the eigenvalues of a distance matrix when the same points are re
 
 A map assigns each of $N$ labelled sites an independent, uniformly sampled position on a ring of circumference one. A pair of sites at shortest-arc distance $d$ interacts through the linear kernel $f(d)=\phi_0-d$. In the neural interpretation of the Battista–Monasson model, a site represents a place cell and its position is the centre of its place field in one environment. Sampling a new map gives the same cells a new spatial arrangement.
 
-For one map, I study the matrix with entries $X^{(1)}_{ij}=f(d_{ij})/N$. Its continuum eigenfunctions are Fourier modes. Each odd harmonic $m>0$ contributes a sine–cosine pair with the same eigenvalue $1/(\pi m)^2$. In a finite sample the two eigenvalues can split. Each pair carries weight $2/N$ in the empirical density, so individual peaks can remain visible even as the normalised spectral measure of the centred matrix converges to a point mass at zero.
+For one map, I study the matrix with entries $$X^{(1)}_{ij}=f(d_{ij})/N$$. Its continuum eigenfunctions are Fourier modes. Each odd harmonic $m>0$ contributes a sine–cosine pair with the same eigenvalue $1/(\pi m)^2$. In a finite sample the two eigenvalues can split. Each pair carries weight $2/N$ in the empirical density, so individual peaks can remain visible even as the normalised spectral measure of the centred matrix converges to a point mass at zero.
 
 For $L$ independent maps, I study the map average and take $N$ and $L$ large at fixed load $\alpha=L/N$,
 
